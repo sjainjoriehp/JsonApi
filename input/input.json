@@ -1,0 +1,1939 @@
+{
+    "links": {
+        "coverageResponse": {
+            "href": "https://api.availity.com/availity/sdk/v1/dfs/ZDZtMEJEUElSalpIcDl2cmZXNFJISnQyV1VGaEt4citlRG5yd21wZHptaTgxaWNUTEwxK1FvYTJTc0tMZStIUnNkdGtTaGg5YmF1TkE3WmZFWFp1OVoxcTBGMGtHZmwwbzdUdkk2eloyWXM5NUlJRFp5Q1JVUkZhL05lV2dlN0srWFhlRmVDazVMcnJ1V05hSUYrZXp1bFFMdlNUcUhpTXN0WnIyVWNxVEo3RWdPNS9yWkZaY1FMQjR3V0pYK3VRbW9aaGVtTmlOUVRzL0FUWGhBaTRRVkphaWU4QlJnc3gxRmlMcmhsdGY3d3V6MUpicWRPOTRWRVRpWmwyU1krSkJtR0MrSWZtM2I2V0UzbkJUQ2ZSRnc9PQ.bin"
+        },
+        "coverageTransaction": {
+            "href": "https://api.availity.com/availity/sdk/v1/transactions/72414536101715016870656300191214"
+        },
+        "coverageRequest": {
+            "href": "https://api.availity.com/availity/sdk/v1/dfs/QnA4azhPRE9GMmFZWXBLSlBpMXZ4WjJoWllYWWNDK3A2eFp5Uys4RkMrYVM1K0h0LzlnUGgyTE5ZUHptcnNuWGQ4YWpzU0hOdFBNQWVvK3VlVHpEVUVscjRTL29OQUtRVUorYXp0M2ZDRm50b3Q4S1NtTTVZcmYvTWhPWVhNa0VrWjZpa2Y4VWo2dmlBa25lOTVEdTFGMmZkbmF6NWp2REZiSWVYRThoTnBVUVljOU4zc1RvSFVnTW9oTjZNOENiSVplaFBxWjdEYzNFYkIzVHZKbmt4SW1jZWllOW5ZeGdzT0xFeVl6aXM2SjlhY1d3R01MRGpNQzJMRTk4bThnbHB6VzJod3hidEJzMDg2aHROYUp2Ync9PQ.bin"
+        },
+        "self": {
+            "href": "https://api.availity.com/availity/v1/coverages/7384491050963439470"
+        }
+    },
+    "id": "7384491050963439470",
+    "customerId": "953549",
+    "controlNumber": "63386982377",
+    "status": "Complete",
+    "statusCode": "4",
+    "createdDate": "2024-05-06T17:34:30.000+0000",
+    "updatedDate": "2024-05-06T17:34:30.000+0000",
+    "expirationDate": "2024-05-07T17:34:30.000+0000",
+    "asOfDate": "2024-05-06T04:00:00.000+0000",
+    "requestedServiceType": [
+        {
+            "code": "30",
+            "value": "Health Benefit Plan Coverage"
+        }
+    ],
+    "subscriber": {
+        "firstName": "EMILIO",
+        "middleName": "A",
+        "lastName": "PIZANA",
+        "memberId": "H43796352",
+        "gender": "Male",
+        "genderCode": "M",
+        "birthDate": "1961-04-21T05:00:00.000+0000",
+        "address": {
+            "line1": "107 CALLOWAYS CT",
+            "city": "LAREDO",
+            "state": "Texas",
+            "stateCode": "TX",
+            "zipCode": "780417634"
+        }
+    },
+    "patient": {
+        "firstName": "EMILIO",
+        "middleName": "A",
+        "lastName": "PIZANA",
+        "subscriberRelationship": "Self",
+        "subscriberRelationshipCode": "18",
+        "gender": "Male",
+        "genderCode": "M",
+        "birthDate": "1961-04-21T05:00:00.000+0000",
+        "address": {
+            "line1": "107 CALLOWAYS CT",
+            "city": "LAREDO",
+            "state": "Texas",
+            "stateCode": "TX",
+            "zipCode": "780417634"
+        },
+        "updateYourRecords": false
+    },
+    "payer": {
+        "name": "HUMANA",
+        "payerId": "61101",
+        "responseName": "HUMANA",
+        "responsePayerId": "61101",
+        "thirdPartyAdministrator": false
+    },
+    "requestingProvider": {
+        "lastName": "AVAILITY",
+        "npi": "1699385260"
+    },
+    "plans": [
+        {
+            "status": "Active Coverage",
+            "statusCode": "1",
+            "groupNumber": "Y8960001",
+            "groupName": "HUMANA INSURANCE CO. OF KY",
+            "healthInsuranceClaimNumber": "3UM1HN9RC19",
+            "serviceDate": "2024-05-06T04:00:00.000+0000",
+            "planStartDate": "2024-05-01T04:00:00.000+0000",
+            "primaryCareProvider": {
+                "category": "Primary Care Provider",
+                "categoryCode": "L",
+                "firstName": "Andres",
+                "lastName": "Garcia Zuniga",
+                "address": {
+                    "line1": "6416 Polaris Dr",
+                    "city": "Laredo",
+                    "state": "Texas",
+                    "stateCode": "TX",
+                    "zipCode": "780412088"
+                },
+                "contactInformation": [
+                    {
+                        "phone": "9565685140"
+                    }
+                ]
+            },
+            "contacts": [
+                {
+                    "category": "Primary Care Provider",
+                    "categoryCode": "L",
+                    "type": "Group",
+                    "typeCode": "GW",
+                    "name": "GENERIC SAN ANTONIO MEDR FFS",
+                    "payerId": "00357750"
+                },
+                {
+                    "category": "Other Source of Data",
+                    "categoryCode": "W",
+                    "payerNotes": [
+                        "NO DESCRIPTION PROVIDED"
+                    ]
+                }
+            ],
+            "benefits": [
+                {
+                    "name": "Health Benefit Plan Coverage",
+                    "type": "30",
+                    "status": "Active Coverage",
+                    "statusCode": "1",
+                    "statusDetails": {
+                        "noNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1",
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "level": "Employee Only",
+                                "levelCode": "EMP",
+                                "description": "HumanaChoice",
+                                "payerNotes": [
+                                    "079 814",
+                                    "Medicare PPO",
+                                    "THIS MEMBER MAY BE ELIGIBLE FOR A FREE FITNESS MEMBERSHIP THROUGH SILVERSNEAKERS OR SILVER&FIT. PLEASE ENCOURAGE HIM OR HER TO CALL SILVERSNEAKERS AT 1-888-423-4632 (FOR MOST STATES) OR SILVER&FIT AT 1-877-427-4788 (FOR ARIZONA AND PENNSYLVANIA) FOR ELIGIBILITY."
+                                ]
+                            }
+                        ]
+                    },
+                    "amounts": {
+                        "outOfPocket": {
+                            "inNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Year to Date",
+                                    "amountTimePeriodCode": "24",
+                                    "remaining": "7200",
+                                    "remainingTimePeriod": "Remaining",
+                                    "remainingTimePeriodCode": "29",
+                                    "total": "7200",
+                                    "totalTimePeriod": "Calendar Year",
+                                    "totalTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#005"
+                                    ]
+                                }
+                            ],
+                            "outOfNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "units": "USD",
+                                    "total": "11500",
+                                    "totalTimePeriod": "Calendar Year",
+                                    "totalTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#005"
+                                    ]
+                                }
+                            ],
+                            "notApplicableNetwork": [
+                                {
+                                    "amount": "0",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Year to Date",
+                                    "amountTimePeriodCode": "24",
+                                    "remaining": "11500",
+                                    "remainingTimePeriod": "Remaining",
+                                    "remainingTimePeriodCode": "29",
+                                    "total": "11500",
+                                    "level": "Individual",
+                                    "levelCode": "IND"
+                                }
+                            ]
+                        }
+                    },
+                    "limitations": {
+                        "notApplicableNetwork": [
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "18275.34",
+                                "units": "USD",
+                                "amountTimePeriod": "Year to Date",
+                                "amountTimePeriodCode": "24",
+                                "remaining": "9981724.65",
+                                "remainingTimePeriod": "Remaining",
+                                "remainingTimePeriodCode": "29",
+                                "total": "9999999.99",
+                                "totalTimePeriod": "Lifetime",
+                                "totalTimePeriodCode": "32",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#004"
+                                ]
+                            }
+                        ],
+                        "noNetwork": [
+                            {
+                                "quantity": "26",
+                                "quantityQualifier": "Years",
+                                "quantityQualifierCode": "YY",
+                                "payerNotes": [
+                                    "MAX DEPENDENT AGE"
+                                ]
+                            },
+                            {
+                                "quantity": "31",
+                                "quantityQualifier": "Years",
+                                "quantityQualifierCode": "YY",
+                                "payerNotes": [
+                                    "MAX STUDENT AGE"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Chiropractic",
+                    "type": "33",
+                    "status": "Active Coverage",
+                    "statusCode": "1",
+                    "statusDetails": {
+                        "noNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1"
+                            }
+                        ]
+                    },
+                    "amounts": {
+                        "coPayment": {
+                            "inNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "15",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Visit",
+                                    "amountTimePeriodCode": "27",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "MEDICARE COVERED MANIPULATIONS"
+                                    ]
+                                }
+                            ]
+                        },
+                        "coInsurance": {
+                            "inNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "MEDICARE COVERED MANIPULATIONS"
+                                    ]
+                                }
+                            ],
+                            "outOfNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": ".5",
+                                    "units": "Percent",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "MEDICARE COVERED MANIPULATIONS"
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "nonCovered": {
+                        "inNetwork": [
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "0",
+                                "units": "USD",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#999",
+                                    "MANIPULATIONS"
+                                ]
+                            },
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "0",
+                                "units": "USD",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#999",
+                                    "RADIOLOGY"
+                                ]
+                            }
+                        ],
+                        "outOfNetwork": [
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "0",
+                                "units": "USD",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#999",
+                                    "MANIPULATIONS"
+                                ]
+                            },
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "0",
+                                "units": "USD",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#999",
+                                    "RADIOLOGY"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Dental Care",
+                    "type": "35",
+                    "status": "Active Coverage",
+                    "statusCode": "1",
+                    "statusDetails": {
+                        "noNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1"
+                            }
+                        ]
+                    },
+                    "nonCovered": {
+                        "inNetwork": [
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "0",
+                                "units": "USD",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#999",
+                                    "VIEW CONTRACT FOR COVERAGE DETAILS"
+                                ]
+                            }
+                        ],
+                        "outOfNetwork": [
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "0",
+                                "units": "USD",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#999",
+                                    "VIEW CONTRACT FOR COVERAGE DETAILS"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Emergency Services",
+                    "type": "86",
+                    "status": "Active Coverage",
+                    "statusCode": "1",
+                    "statusDetails": {
+                        "noNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1"
+                            }
+                        ]
+                    },
+                    "amounts": {
+                        "coPayment": {
+                            "inNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "100",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Episode",
+                                    "amountTimePeriodCode": "26",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "ER"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "100",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Episode",
+                                    "amountTimePeriodCode": "26",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "ANESTHESIA"
+                                    ]
+                                }
+                            ],
+                            "outOfNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "100",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Episode",
+                                    "amountTimePeriodCode": "26",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "ER"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "100",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Episode",
+                                    "amountTimePeriodCode": "26",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "ANESTHESIA"
+                                    ]
+                                }
+                            ]
+                        },
+                        "coInsurance": {
+                            "inNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "ER"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "ANESTHESIA"
+                                    ]
+                                }
+                            ],
+                            "outOfNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "ER"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "ANESTHESIA"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Hospital",
+                    "type": "47",
+                    "status": "Active Coverage",
+                    "statusCode": "1",
+                    "statusDetails": {
+                        "inNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1",
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "0",
+                                "units": "USD",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#999",
+                                    "INPATIENT HOSPITAL"
+                                ]
+                            }
+                        ],
+                        "outOfNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1",
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "0",
+                                "units": "USD",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#999",
+                                    "INPATIENT HOSPITAL"
+                                ]
+                            }
+                        ],
+                        "noNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Hospital - Inpatient",
+                    "type": "48",
+                    "status": "Active Coverage",
+                    "statusCode": "1",
+                    "statusDetails": {
+                        "noNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1"
+                            }
+                        ]
+                    },
+                    "amounts": {
+                        "coInsurance": {
+                            "inNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "INPATIENT HOSPITAL"
+                                    ]
+                                }
+                            ],
+                            "outOfNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": ".5",
+                                    "units": "Percent",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "INPATIENT HOSPITAL"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Hospital - Outpatient",
+                    "type": "50",
+                    "status": "Active Coverage",
+                    "statusCode": "1",
+                    "statusDetails": {
+                        "noNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1"
+                            }
+                        ]
+                    },
+                    "amounts": {
+                        "coPayment": {
+                            "inNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "275",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Visit",
+                                    "amountTimePeriodCode": "27",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "OUTPATIENT HOSPITAL SURGERY"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "175",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Visit",
+                                    "amountTimePeriodCode": "27",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "OUTPATIENT HOSPITAL ANESTHESIA"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "300",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Visit",
+                                    "amountTimePeriodCode": "27",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "OUTPATIENT HOSPITAL MRI SCAN"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "300",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Visit",
+                                    "amountTimePeriodCode": "27",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "OUTPATIENT HOSPITAL CAT SCAN"
+                                    ]
+                                }
+                            ]
+                        },
+                        "coInsurance": {
+                            "inNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "OUTPATIENT HOSPITAL SURGERY"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "OUTPATIENT HOSPITAL ANESTHESIA"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "OUTPATIENT HOSPITAL MRI SCAN"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "OUTPATIENT HOSPITAL CAT SCAN"
+                                    ]
+                                }
+                            ],
+                            "outOfNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": ".5",
+                                    "units": "Percent",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "OUTPATIENT HOSPITAL SURGERY"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": ".4",
+                                    "units": "Percent",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "OUTPATIENT HOSPITAL ANESTHESIA"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": ".5",
+                                    "units": "Percent",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "OUTPATIENT HOSPITAL MRI SCAN"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": ".5",
+                                    "units": "Percent",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "OUTPATIENT HOSPITAL CAT SCAN"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Hospital - Room and Board",
+                    "type": "49",
+                    "amounts": {
+                        "coPayment": {
+                            "inNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "325",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Admission",
+                                    "amountTimePeriodCode": "36",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "quantity": "1",
+                                    "quantityQualifier": "Days",
+                                    "quantityQualifierCode": "DY",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "INPATIENT HOSPITAL ROOM AND BOARD"
+                                    ]
+                                }
+                            ]
+                        },
+                        "coInsurance": {
+                            "inNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Admission",
+                                    "amountTimePeriodCode": "36",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "INPATIENT HOSPITAL ROOM AND BOARD"
+                                    ]
+                                }
+                            ],
+                            "outOfNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": ".5",
+                                    "units": "Percent",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "INPATIENT HOSPITAL ROOM AND BOARD"
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "limitations": {
+                        "inNetwork": [
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "325",
+                                "units": "USD",
+                                "amountTimePeriod": "Admission",
+                                "amountTimePeriodCode": "36",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "quantity": "5",
+                                "quantityQualifier": "Days",
+                                "quantityQualifierCode": "DY",
+                                "payerNotes": [
+                                    "Seq#004",
+                                    "INPATIENT HOSPITAL ROOM AND BOARD"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Long Term Care",
+                    "type": "54",
+                    "status": "Active Coverage",
+                    "statusCode": "1",
+                    "statusDetails": {
+                        "noNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Medical Care",
+                    "type": "1",
+                    "status": "Active Coverage",
+                    "statusCode": "1",
+                    "statusDetails": {
+                        "inNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1",
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "0",
+                                "units": "USD",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#999"
+                                ]
+                            }
+                        ],
+                        "outOfNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1",
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "0",
+                                "units": "USD",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#999"
+                                ]
+                            }
+                        ],
+                        "noNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Mental Health",
+                    "type": "MH",
+                    "status": "Active Coverage",
+                    "statusCode": "1",
+                    "statusDetails": {
+                        "inNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1",
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "0",
+                                "units": "USD",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#999",
+                                    "PHYSICIAN OFFICE VISIT SPECIALIST"
+                                ]
+                            }
+                        ],
+                        "outOfNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1",
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "0",
+                                "units": "USD",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#999",
+                                    "PHYSICIAN OFFICE VISIT"
+                                ]
+                            }
+                        ],
+                        "noNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1"
+                            }
+                        ]
+                    },
+                    "amounts": {
+                        "coPayment": {
+                            "outOfNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "65",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Visit",
+                                    "amountTimePeriodCode": "27",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "TELEHEALTH VISIT"
+                                    ]
+                                }
+                            ]
+                        },
+                        "coInsurance": {
+                            "inNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "TELEHEALTH VISIT PCP"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "TELEHEALTH VISIT SPECIALIST"
+                                    ]
+                                }
+                            ],
+                            "outOfNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "TELEHEALTH VISIT"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Pharmacy",
+                    "type": "88",
+                    "status": "Active Coverage",
+                    "statusCode": "1",
+                    "statusDetails": {
+                        "noNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1"
+                            }
+                        ]
+                    },
+                    "amounts": {
+                        "coPayment": {
+                            "inNetwork": [
+                                {
+                                    "amount": "47",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "LEVEL 3"
+                                    ]
+                                },
+                                {
+                                    "amount": "99",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "LEVEL 4"
+                                    ]
+                                },
+                                {
+                                    "amount": "35",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#002"
+                                    ]
+                                }
+                            ],
+                            "noNetwork": [
+                                {
+                                    "amount": "0",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "GENERIC STEP 4"
+                                    ]
+                                },
+                                {
+                                    "amount": "0",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "NONG STG 4"
+                                    ]
+                                },
+                                {
+                                    "amount": "0",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#002"
+                                    ]
+                                },
+                                {
+                                    "amount": "5",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#002"
+                                    ]
+                                },
+                                {
+                                    "amount": "33",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#002"
+                                    ]
+                                },
+                                {
+                                    "amount": "47",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#002"
+                                    ]
+                                },
+                                {
+                                    "amount": "99",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#002"
+                                    ]
+                                },
+                                {
+                                    "amount": "35",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#002"
+                                    ]
+                                },
+                                {
+                                    "amount": "25",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#002"
+                                    ]
+                                },
+                                {
+                                    "amount": "0",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "SPECIALTY UP TO OOP"
+                                    ]
+                                },
+                                {
+                                    "amount": "0",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "PREFERRED ABOVE OOP"
+                                    ]
+                                },
+                                {
+                                    "amount": "0",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "SPECIALTY ABOVE OOP"
+                                    ]
+                                },
+                                {
+                                    "amount": "4.6",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "SPECIALTY UP TO OOP"
+                                    ]
+                                },
+                                {
+                                    "amount": "11.2",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "SPECIALTY UP TO OOP"
+                                    ]
+                                }
+                            ]
+                        },
+                        "deductibles": {
+                            "inNetwork": [
+                                {
+                                    "amount": "0",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#001"
+                                    ]
+                                }
+                            ],
+                            "noNetwork": [
+                                {
+                                    "amount": "0",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#001"
+                                    ]
+                                },
+                                {
+                                    "amount": "1.55",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#001"
+                                    ]
+                                },
+                                {
+                                    "amount": "4.5",
+                                    "units": "USD",
+                                    "payerNotes": [
+                                        "Seq#001"
+                                    ]
+                                }
+                            ]
+                        },
+                        "coInsurance": {
+                            "noNetwork": [
+                                {
+                                    "amount": ".05",
+                                    "units": "Percent",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "GEN STG 4"
+                                    ]
+                                },
+                                {
+                                    "amount": ".95",
+                                    "units": "Percent",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "NONG STG 4"
+                                    ]
+                                },
+                                {
+                                    "amount": ".75",
+                                    "units": "Percent",
+                                    "payerNotes": [
+                                        "Seq#003"
+                                    ]
+                                },
+                                {
+                                    "amount": "1",
+                                    "units": "Percent",
+                                    "payerNotes": [
+                                        "Seq#003"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Professional (Physician) Visit - Office",
+                    "type": "98",
+                    "status": "Active Coverage",
+                    "statusCode": "1",
+                    "statusDetails": {
+                        "noNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1"
+                            }
+                        ]
+                    },
+                    "amounts": {
+                        "coPayment": {
+                            "inNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "PHYSICIAN OFFICE VISIT PCP"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "40",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Visit",
+                                    "amountTimePeriodCode": "27",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "PHYSICIAN OFFICE VISIT SPECIALIST"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "PHYSICIAN OFFICE VISIT FREESTANDING RAD CTR"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "PHYSICIAN OFFICE VISIT COMP OUTPT REHAB FACILITY"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "TELEHEALTH VISIT PCP"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "40",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Visit",
+                                    "amountTimePeriodCode": "27",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "TELEHEALTH VISIT SPECIALIST"
+                                    ]
+                                }
+                            ],
+                            "outOfNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "65",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Visit",
+                                    "amountTimePeriodCode": "27",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "TELEHEALTH VISIT"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "65",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Visit",
+                                    "amountTimePeriodCode": "27",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "PHYSICIAN OFFICE VISIT"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "25",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Visit",
+                                    "amountTimePeriodCode": "27",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "PHYSICIAN OFFICE VISIT NON-PARTICIPATING PCP"
+                                    ]
+                                }
+                            ]
+                        },
+                        "coInsurance": {
+                            "inNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "TELEHEALTH VISIT PCP"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "TELEHEALTH VISIT SPECIALIST"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "PHYSICIAN OFFICE VISIT PCP"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "PHYSICIAN OFFICE VISIT SPECIALIST"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "PHYSICIAN OFFICE VISIT FREESTANDING RAD CTR"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "PHYSICIAN OFFICE VISIT COMP OUTPT REHAB FACILITY"
+                                    ]
+                                }
+                            ],
+                            "outOfNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "TELEHEALTH VISIT"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "PHYSICIAN OFFICE VISIT"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "PHYSICIAN OFFICE VISIT NON-PARTICIPATING PCP"
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "limitations": {
+                        "inNetwork": [
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "1",
+                                "units": "Percent",
+                                "totalTimePeriod": "Calendar Year",
+                                "totalTimePeriodCode": "23",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#004",
+                                    "PHYSICIAN OFFICE VISIT PCP"
+                                ]
+                            },
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "1",
+                                "units": "Percent",
+                                "totalTimePeriod": "Visit",
+                                "totalTimePeriodCode": "27",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#004",
+                                    "PHYSICIAN OFFICE VISIT SPECIALIST"
+                                ]
+                            },
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "1",
+                                "units": "Percent",
+                                "totalTimePeriod": "Calendar Year",
+                                "totalTimePeriodCode": "23",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#004",
+                                    "PHYSICIAN OFFICE VISIT FREESTANDING RAD CTR"
+                                ]
+                            },
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "1",
+                                "units": "Percent",
+                                "totalTimePeriod": "Calendar Year",
+                                "totalTimePeriodCode": "23",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#004",
+                                    "PHYSICIAN OFFICE VISIT COMP OUTPT REHAB FACILITY"
+                                ]
+                            },
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "1",
+                                "units": "Percent",
+                                "totalTimePeriod": "Calendar Year",
+                                "totalTimePeriodCode": "23",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#004",
+                                    "TELEHEALTH VISIT PCP"
+                                ]
+                            },
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "1",
+                                "units": "Percent",
+                                "totalTimePeriod": "Visit",
+                                "totalTimePeriodCode": "27",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#004",
+                                    "TELEHEALTH VISIT SPECIALIST"
+                                ]
+                            }
+                        ],
+                        "outOfNetwork": [
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "1",
+                                "units": "Percent",
+                                "totalTimePeriod": "Visit",
+                                "totalTimePeriodCode": "27",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#004",
+                                    "PHYSICIAN OFFICE VISIT"
+                                ]
+                            },
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "1",
+                                "units": "Percent",
+                                "totalTimePeriod": "Visit",
+                                "totalTimePeriodCode": "27",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#004",
+                                    "PHYSICIAN OFFICE VISIT NON-PARTICIPATING PCP"
+                                ]
+                            },
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "1",
+                                "units": "Percent",
+                                "totalTimePeriod": "Visit",
+                                "totalTimePeriodCode": "27",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#004",
+                                    "TELEHEALTH VISIT"
+                                ]
+                            }
+                        ]
+                    },
+                    "nonCovered": {
+                        "inNetwork": [
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "amount": "0",
+                                "units": "USD",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#999",
+                                    "PHYSICIAN OFFICE DOCTOR ON DEMAND NOT COVERED"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Urgent Care",
+                    "type": "UC",
+                    "status": "Active Coverage",
+                    "statusCode": "1",
+                    "statusDetails": {
+                        "noNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1"
+                            }
+                        ]
+                    },
+                    "amounts": {
+                        "coPayment": {
+                            "inNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "55",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Visit",
+                                    "amountTimePeriodCode": "27",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "PHYSICIAN OFFICE URGENT CARE"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "55",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Visit",
+                                    "amountTimePeriodCode": "27",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "PHYSICIAN OFFICE PREFERRED URGENT CARE"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "55",
+                                    "units": "USD",
+                                    "amountTimePeriod": "Visit",
+                                    "amountTimePeriodCode": "27",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#002",
+                                        "TELEHEALTH URGENT CARE"
+                                    ]
+                                }
+                            ]
+                        },
+                        "coInsurance": {
+                            "inNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "PHYSICIAN OFFICE URGENT CARE"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "PHYSICIAN OFFICE PREFERRED URGENT CARE"
+                                    ]
+                                },
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "TELEHEALTH URGENT CARE"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Vision (Optometry)",
+                    "type": "AL",
+                    "status": "Active Coverage",
+                    "statusCode": "1",
+                    "statusDetails": {
+                        "noNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1"
+                            }
+                        ]
+                    },
+                    "amounts": {
+                        "coInsurance": {
+                            "inNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "ROUTINE VISION EXAM"
+                                    ]
+                                }
+                            ],
+                            "outOfNetwork": [
+                                {
+                                    "insuranceType": "Preferred Provider Organization (PPO)",
+                                    "insuranceTypeCode": "PR",
+                                    "amount": "0",
+                                    "units": "Percent",
+                                    "amountTimePeriod": "Calendar Year",
+                                    "amountTimePeriodCode": "23",
+                                    "level": "Individual",
+                                    "levelCode": "IND",
+                                    "payerNotes": [
+                                        "Seq#003",
+                                        "ROUTINE VISION EXAM"
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "limitations": {
+                        "inNetwork": [
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "units": "USD",
+                                "total": "75",
+                                "totalTimePeriod": "Calendar Year",
+                                "totalTimePeriodCode": "23",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#004",
+                                    "ROUTINE VISION EXAM"
+                                ]
+                            }
+                        ],
+                        "outOfNetwork": [
+                            {
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "units": "USD",
+                                "total": "75",
+                                "totalTimePeriod": "Calendar Year",
+                                "totalTimePeriodCode": "23",
+                                "level": "Individual",
+                                "levelCode": "IND",
+                                "payerNotes": [
+                                    "Seq#004",
+                                    "ROUTINE VISION EXAM"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ],
+            "insuranceType": "Preferred Provider Organization (PPO)",
+            "insuranceTypeCode": "PR",
+            "payerNotes": [
+                {
+                    "type": "Disclaimer",
+                    "typeCode": "P",
+                    "message": "THIS IS ONLY AN ESTIMATION OF BENEFITS, AND ALL PAYMENTS ARE SUBJECT TO POLICY GUIDELINES, MEDICAL NECESSITY, AND MEMBER ELIGIBILITY AT THE TIME SERVICES ARE PERFORMED."
+                }
+            ]
+        }
+    ],
+    "supplementalInformation": {
+        "professionalPatientCostEstimator": false,
+        "institutionalPatientCostEstimator": false,
+        "patientCareSummary": false,
+        "assessmentCarePlan": false,
+        "outOfArea": false,
+        "requestLtssccAmount": false,
+        "erReferralCompleted": false,
+        "functionalIdentifierCode": "HB",
+        "applicationSenderCode": "0499441430000",
+        "eligibleForCOB": false
+    },
+    "hasHRAInformation": false
+}
