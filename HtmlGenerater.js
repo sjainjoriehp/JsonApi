@@ -1,47 +1,4 @@
-const fs = require("fs");
-const pdf = require("html-pdf");
-
-const {
-  GenerateRandomName,
-  TimeFormater,
-  DOBFormat,
-  ExcelDataEXtraction,
-  ProviderNPI_TaxID
-} = require("./CustomFunction");
-require("dotenv").config();
-const path = require("path");
-
-// const options = {
-//   format: 'A4',
-//   orientation: 'portrait',
-//   border: '10mm'
-// };
-let options = { format: "A4" };
-
-const XLSX = require("xlsx");
-const OutputGeneratorByJson = async (req, res, next) => {
-  try {
-    // console.log("json",req?.files?.jsonfile[0]?.path);
-    // console.log("exl",req?.files?.excelfile[0]?.path);
-    const PN = req?.files?.jsonfile[0]?.path.split(/\\/);
-    const PN_Arr = PN[PN.length - 1].split("_");
-    const Policy_no = PN_Arr[0];
-    // console.log("Policy number: ", Policy_no);
-
-   
-    //==============READ EXCEL DATA ==========================
-    const ExcelData = ExcelDataEXtraction(
-      req?.files?.excelfile[0]?.path,
-      Policy_no
-    );
-
-    // ======================================================
-
-    // Read the contents of the uploaded  JSON file
-    const filePath = req?.files?.jsonfile[0]?.path;
-    const fileContents = require("fs").readFileSync(filePath, "utf8");
-    // Parse the JSON data
-    const JsonData = JSON.parse(fileContents);
+function generateTable(JsonData,ExcelData) {
     let Professional_Physician_visit = [];
     let ChildObj = {};
     for (let i = 0; i <= JsonData?.plans[0]?.benefits?.length - 1; i++) {
@@ -93,25 +50,8 @@ const OutputGeneratorByJson = async (req, res, next) => {
     }
 
 
-
-
-
-    
-    //  ===Requesting provider name by NPI tax id===
-     // ========Provider NPI TAXID=========
-     let NPI = (JsonData?.requestingProvider?.npi) ? JsonData?.requestingProvider?.npi : '';
-   let NPI_TAX = await ProviderNPI_TaxID(NPI);
-   console.log("return ",NPI_TAX);
-// let Requesting_provider_name = (NPI_TAX[0]?.ProviderName) ?  NPI_TAX[0]?.ProviderName: '' ;
-
-//====== loop for policy id when it will match multiple time in a excel file========
-let itrateCounter = (ExcelData.length>0) ? ExcelData.length :1;
-for(let pi=0; pi<=itrateCounter-1; pi++) {
-  // html table generater here
-  function generateTable(data) {
     let DateAndTime = TimeFormater(JsonData?.createdDate);
     let DOB = DOBFormat(JsonData?.patient?.birthDate);
-   
     let Requesting_provider_name = "";
     if (JsonData?.requestingProvider?.firstName !== undefined) {
       Requesting_provider_name += `${JsonData?.requestingProvider?.firstName}, `;
@@ -119,8 +59,6 @@ for(let pi=0; pi<=itrateCounter-1; pi++) {
     if (JsonData?.requestingProvider?.lastName !== undefined) {
       Requesting_provider_name += `${JsonData?.requestingProvider?.lastName}`;
     }
-
-
 
     let Plan_effective_date =
       JsonData?.plans[0]?.coverageStartDate !== undefined
@@ -231,69 +169,69 @@ for(let pi=0; pi<=itrateCounter-1; pi++) {
  ==============================================================`;
     table += `<table>
  <tr><td style="font-weight:bold">Co-Payment</td> <td>&nbsp : &nbsp;</td><td>${
-   ExcelData[pi]?.CoPayment !== undefined ? ExcelData[pi]?.CoPayment : "NA"
+   ExcelData[0]?.CoPayment !== undefined ? ExcelData[0]?.CoPayment : "NA"
  }</td></tr> 
  <tr><td style="font-weight:bold">Co-Insurance</td> <td>&nbsp : &nbsp;</td> <td>${
-   ExcelData[pi]?.CoInsurance !== undefined ? ExcelData[pi]?.CoInsurance : "NA"
+   ExcelData[0]?.CoInsurance !== undefined ? ExcelData[0]?.CoInsurance : "NA"
  }</td></tr> 
  <tr><td style="font-weight:bold">Deductible Individual</td> <td>&nbsp : &nbsp;</td><td>${
-   ExcelData[pi]?.DeductibleIndividual !== undefined
-     ? ExcelData[pi]?.DeductibleIndividual
+   ExcelData[0]?.DeductibleIndividual !== undefined
+     ? ExcelData[0]?.DeductibleIndividual
      : "NA"
  }</td></tr> 
  <tr><td style="font-weight:bold">Deductible Individual Met</td> <td>&nbsp : &nbsp;</td><td>${
-   ExcelData[pi]?.DeductibleIndividualMet !== undefined
-     ? ExcelData[pi]?.DeductibleIndividualMet
+   ExcelData[0]?.DeductibleIndividualMet !== undefined
+     ? ExcelData[0]?.DeductibleIndividualMet
      : "NA"
  }</td></tr>
  <tr><td style="font-weight:bold">Deductible Individual Remaining</td> <td>&nbsp : &nbsp;</td><td>${
-   ExcelData[pi]?.DeductibleIndividualRemaining !== undefined
-     ? ExcelData[pi]?.DeductibleIndividualRemaining
+   ExcelData[0]?.DeductibleIndividualRemaining !== undefined
+     ? ExcelData[0]?.DeductibleIndividualRemaining
      : "NA"
  }</td></tr> 
  <tr><td style="font-weight:bold">Deductible Family</td> <td>&nbsp : &nbsp;</td> <td>${
-   ExcelData[pi]?.DeductibleFamily !== undefined
-     ? ExcelData[pi]?.DeductibleFamily
+   ExcelData[0]?.DeductibleFamily !== undefined
+     ? ExcelData[0]?.DeductibleFamily
      : "NA"
  }</td></tr> 
  <tr><td style="font-weight:bold">Deductible Family Met</td> <td>&nbsp : &nbsp;</td> <td>${
-   ExcelData[pi]?.DeductibleFamilyMet !== undefined
-     ? ExcelData[pi]?.DeductibleFamilyMet
+   ExcelData[0]?.DeductibleFamilyMet !== undefined
+     ? ExcelData[0]?.DeductibleFamilyMet
      : "NA"
  }</td></tr> 
  <tr><td style="font-weight:bold">Deductible Family Remaining</td> <td>&nbsp : &nbsp;</td> <td>${
-   ExcelData[pi]?.DeductibleFamilyRemaining !== undefined
-     ? ExcelData[pi]?.DeductibleFamilyRemaining
+   ExcelData[0]?.DeductibleFamilyRemaining !== undefined
+     ? ExcelData[0]?.DeductibleFamilyRemaining
      : "NA"
  }</td></tr> 
  <tr><td style="font-weight:bold">Out Of Pocket Individual</td> <td>&nbsp : &nbsp;</td> <td>${
-   ExcelData[pi]?.OutOfPocketIndividual !== undefined
-     ? ExcelData[pi]?.OutOfPocketIndividual
+   ExcelData[0]?.OutOfPocketIndividual !== undefined
+     ? ExcelData[0]?.OutOfPocketIndividual
      : "NA"
  }</td></tr>
  <tr><td style="font-weight:bold">Out Of Pocket Individual Met</td> <td>&nbsp : &nbsp;</td> <td>${
-   ExcelData[pi]?.OutOfPocketIndividualMet !== undefined
-     ? ExcelData[pi]?.OutOfPocketIndividualMet
+   ExcelData[0]?.OutOfPocketIndividualMet !== undefined
+     ? ExcelData[0]?.OutOfPocketIndividualMet
      : "NA"
  }</td></tr>
  <tr><td style="font-weight:bold">Out Of Pocket Individual Remaining</td> <td>&nbsp : &nbsp;</td> <td>${
-   ExcelData[pi]?.OutOfPocketIndividualRemaining !== undefined
-     ? ExcelData[pi]?.OutOfPocketIndividualRemaining
+   ExcelData[0]?.OutOfPocketIndividualRemaining !== undefined
+     ? ExcelData[0]?.OutOfPocketIndividualRemaining
      : "NA"
  }</td></tr> 
  <tr><td style="font-weight:bold">Out Of Pocket Family</td> <td>&nbsp : &nbsp;</td> <td>${
-   ExcelData[pi]?.OutOfPocketFamily !== undefined
-     ? ExcelData[pi]?.OutOfPocketFamily
+   ExcelData[0]?.OutOfPocketFamily !== undefined
+     ? ExcelData[0]?.OutOfPocketFamily
      : "NA"
  }</td></tr> 
  <tr><td style="font-weight:bold">Out Of Pocket Family Met</td> <td>&nbsp : &nbsp;</td> <td>${
-   ExcelData[pi]?.OutOfPocketFamilyMet !== undefined
-     ? ExcelData[pi]?.OutOfPocketFamilyMet
+   ExcelData[0]?.OutOfPocketFamilyMet !== undefined
+     ? ExcelData[0]?.OutOfPocketFamilyMet
      : "NA"
  }</td></tr>
  <tr><td style="font-weight:bold">Out Of Pocket Family Remaining</td> <td>&nbsp : &nbsp;</td> <td>${
-   ExcelData[pi]?.OutOfPocketFamilyRemaining !== undefined
-     ? ExcelData[pi]?.OutOfPocketFamilyRemaining
+   ExcelData[0]?.OutOfPocketFamilyRemaining !== undefined
+     ? ExcelData[0]?.OutOfPocketFamilyRemaining
      : "NA"
  }</td></tr>
  `;
@@ -401,72 +339,10 @@ for(let pi=0; pi<=itrateCounter-1; pi++) {
       return (table += `</table>`);
     }); //parent map
     table += "</table></br>";
+    console.log(table);
     return table;
   }
 
-  // =====file generating here =====================
-  let tblData = generateTable(Professional_Physician_visit);
-  
-  
-  // ------inserted html generated flie -----
-  const createCsvFile = (data, filename) => {
-    fs.writeFileSync(filename, data);
-  };
-  let fileName = req?.body?.file_name;  let EPi =pi+1;
-  let fullFilePath = "public/output/" + Policy_no + "_" + fileName+EPi+ ".html";
-  createCsvFile(tblData, fullFilePath);
-
-  // ------inserted html generated flie  END ---------
-
-  // ----------CODE FOR GENERATE A PDF START--------------
-  // let fileName = req?.body?.file_name;
-  // let fullFilePath = "public/output/output_"+fileName+".pdf"; //dynamic path
-  // let fullFilePath = "./output/output_"+fileName+".pdf" ;
-
-  // const pdfRes =
-  //  pdf.create(tblData, options).toFile(fullFilePath, (err, res) => {
-  //   console.log("Inside PDF",res);
-  //   if (err) {
-  //     console.error(err);
-  //   }
-  //   console.log(res);
-  //   // return  res;
-  // });
-
-
-
-  function htmlToPdf(htmlFilePath, pdfFilePath) {
-    const htmlContent = fs.readFileSync(htmlFilePath, 'utf8');
-
-    const options = { format: 'Letter' };
-
-    pdf.create(htmlContent, options).toFile(pdfFilePath, (err, res) => {
-        if (err) return console.error('Error generating PDF:', err);
-        console.log('PDF generated successfully:', res);
-    });
-}
-const pdfFilePath = path.join(__dirname, 'output', 'example.pdf');
-
-htmlToPdf(fullFilePath, pdfFilePath);
-  // -------------CODE FOR GENERATE A  PDF END---------------
-
-
-} //end for loop for itrate a excel data/policy id's
-
-    return res.status(200).json({
-      status: 200,
-      // file: path.join(__dirname, fullFilePath),
-      message: "file generated successfully",
-    });
-  } catch (err) {
-    res.status(500).json({
-      status: 500,
-      message: "internal server Error",
-      error: err,
-    });
+  module.exports = {
+    generateTable
   }
-};
-
-module.exports = {
-  OutputGeneratorByJson,
-};

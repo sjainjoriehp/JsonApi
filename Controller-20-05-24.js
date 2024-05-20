@@ -6,7 +6,6 @@ const {
   TimeFormater,
   DOBFormat,
   ExcelDataEXtraction,
-  ProviderNPI_TaxID
 } = require("./CustomFunction");
 require("dotenv").config();
 const path = require("path");
@@ -28,13 +27,11 @@ const OutputGeneratorByJson = async (req, res, next) => {
     const Policy_no = PN_Arr[0];
     // console.log("Policy number: ", Policy_no);
 
-   
     //==============READ EXCEL DATA ==========================
     const ExcelData = ExcelDataEXtraction(
       req?.files?.excelfile[0]?.path,
       Policy_no
     );
-
     // ======================================================
 
     // Read the contents of the uploaded  JSON file
@@ -92,18 +89,6 @@ const OutputGeneratorByJson = async (req, res, next) => {
       ChildObj = {};
     }
 
-
-
-
-
-    
-    //  ===Requesting provider name by NPI tax id===
-     // ========Provider NPI TAXID=========
-     let NPI = (JsonData?.requestingProvider?.npi) ? JsonData?.requestingProvider?.npi : '';
-   let NPI_TAX = await ProviderNPI_TaxID(NPI);
-   console.log("return ",NPI_TAX);
-// let Requesting_provider_name = (NPI_TAX[0]?.ProviderName) ?  NPI_TAX[0]?.ProviderName: '' ;
-
 //====== loop for policy id when it will match multiple time in a excel file========
 let itrateCounter = (ExcelData.length>0) ? ExcelData.length :1;
 for(let pi=0; pi<=itrateCounter-1; pi++) {
@@ -111,7 +96,6 @@ for(let pi=0; pi<=itrateCounter-1; pi++) {
   function generateTable(data) {
     let DateAndTime = TimeFormater(JsonData?.createdDate);
     let DOB = DOBFormat(JsonData?.patient?.birthDate);
-   
     let Requesting_provider_name = "";
     if (JsonData?.requestingProvider?.firstName !== undefined) {
       Requesting_provider_name += `${JsonData?.requestingProvider?.firstName}, `;
@@ -119,8 +103,6 @@ for(let pi=0; pi<=itrateCounter-1; pi++) {
     if (JsonData?.requestingProvider?.lastName !== undefined) {
       Requesting_provider_name += `${JsonData?.requestingProvider?.lastName}`;
     }
-
-
 
     let Plan_effective_date =
       JsonData?.plans[0]?.coverageStartDate !== undefined
