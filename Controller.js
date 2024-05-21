@@ -10,12 +10,6 @@ const {
 } = require("./CustomFunction");
 require("dotenv").config();
 const path = require("path");
-
-// const options = {
-//   format: 'A4',
-//   orientation: 'portrait',
-//   border: '10mm'
-// };
 let options = { format: "A4" };
 
 const XLSX = require("xlsx");
@@ -93,16 +87,12 @@ const OutputGeneratorByJson = async (req, res, next) => {
     }
 
 
-
-
-
-    
     //  ===Requesting provider name by NPI tax id===
      // ========Provider NPI TAXID=========
      let NPI = (JsonData?.requestingProvider?.npi) ? JsonData?.requestingProvider?.npi : '';
-   let NPI_TAX = await ProviderNPI_TaxID(NPI);
-   console.log("return ",NPI_TAX);
-// let Requesting_provider_name = (NPI_TAX[0]?.ProviderName) ?  NPI_TAX[0]?.ProviderName: '' ;
+     let NPI_TAX = await ProviderNPI_TaxID(req?.files?.npi_provider[0]?.path, NPI);
+      //  console.log("new",NPI_TAX[0]?.ProviderName);
+let Requesting_provider_name = (NPI_TAX[0]?.ProviderName) ?  NPI_TAX[0]?.ProviderName: '' ;
 
 //====== loop for policy id when it will match multiple time in a excel file========
 let itrateCounter = (ExcelData.length>0) ? ExcelData.length :1;
@@ -112,13 +102,13 @@ for(let pi=0; pi<=itrateCounter-1; pi++) {
     let DateAndTime = TimeFormater(JsonData?.createdDate);
     let DOB = DOBFormat(JsonData?.patient?.birthDate);
    
-    let Requesting_provider_name = "";
-    if (JsonData?.requestingProvider?.firstName !== undefined) {
-      Requesting_provider_name += `${JsonData?.requestingProvider?.firstName}, `;
-    }
-    if (JsonData?.requestingProvider?.lastName !== undefined) {
-      Requesting_provider_name += `${JsonData?.requestingProvider?.lastName}`;
-    }
+    // let Requesting_provider_name = "";
+    // if (JsonData?.requestingProvider?.firstName !== undefined) {
+    //   Requesting_provider_name += `${JsonData?.requestingProvider?.firstName}, `;
+    // }
+    // if (JsonData?.requestingProvider?.lastName !== undefined) {
+    //   Requesting_provider_name += `${JsonData?.requestingProvider?.lastName}`;
+    // }
 
 
 
@@ -458,7 +448,8 @@ htmlToPdf(fullFilePath, pdfFilePath);
       // file: path.join(__dirname, fullFilePath),
       message: "file generated successfully",
     });
-  } catch (err) {
+  } 
+  catch (err) {
     res.status(500).json({
       status: 500,
       message: "internal server Error",

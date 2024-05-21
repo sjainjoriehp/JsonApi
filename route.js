@@ -20,11 +20,11 @@ const storage = multer.diskStorage({
   const upload = multer({ storage: storage });
 
 // router.route("/JsonTo_outputGenerator").post(upload.single("jsonfile"), OutputGeneratorByJson);
-router.route("/JsonTo_outputGenerator").post(upload.fields([{
-    name: 'jsonfile', maxCount: 1
-  }, {
-    name: 'excelfile', maxCount: 1
-  }]), OutputGeneratorByJson);
+router.route("/JsonTo_outputGenerator").post(upload.fields([
+  {name: 'jsonfile', maxCount: 1 },
+     { name: 'excelfile', maxCount: 1 },
+  {name: 'npi_provider', maxCount: 1 }
+]), OutputGeneratorByJson);
 
 console.log("call");
 module.exports={

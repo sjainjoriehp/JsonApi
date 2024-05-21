@@ -48,22 +48,26 @@ const ExcelDataEXtraction = (ExlURL,PolicyID,next) =>{
     return ExlDataFilter;
 
 }
-const ProviderNPI_TaxID = async (NPI, next) => {
-    console.log("ID", NPI);
-    const PathNPI = "input/Provider_NPI_TaxID.xlsx";
 
+const ProviderNPI_TaxID = async (PathNPI,NPI, next) => {
     try {
         var workbook = await XLSX.readFile(PathNPI);
         var sheet_name_list = workbook.SheetNames;
         var xlData = await XLSX.utils.sheet_to_json(workbook.Sheets[sheet_name_list[0]]);
-        console.log(xlData);
-        console.log("test");
-        return NPI;
+        xlData = xlData.map(el => 
+            Object.fromEntries(Object.entries(el).map(([key, value]) => ([
+              key.replace(/\s+/g, ""),
+              value
+            ])))
+          );
+          const ExlDataFilter = xlData.filter((val)=>{  return val?.NPI==NPI});
+          return ExlDataFilter;
     } catch (error) {
         console.error("Error reading Excel file:", error);
         return next(error);
     }
 }
+
 
 module.exports= {
     GenerateRandomName,

@@ -1,0 +1,194 @@
+{
+    "links": {
+        "coverageResponse": {
+            "href": "https://api.availity.com/availity/sdk/v1/dfs/ZDZtMEJEUElSalpwNGlTSjRmSzE2YUVoMkFmNFUzM0w2Z3YySVZJRVBqVzgxaWNUTEwxK1FvYTJTc0tMZStIUnNkdGtTaGg5YmF1TkE3WmZFWFp1OVoxcTBGMGtHZmwwbzdUdkk2eloyWXM5NUlJRFp5Q1JVUkZhL05lV2dlN0tWaGt0ZzNSNDZ0ZDhaZEorQWVja0p2SzBLcDd0ek9sVENsczhxeHpua0dwMWhnblZWNG1uYi9uNXY2cE0rcml1OHNWNzlmYnBXRGhIei94L2dpSlZwV2ttR1h1K1U2UkhrN09TYUdiRTlsUHROM2tORGN5Q1l0S3dxNm0yNWZvYXZTZkNERWJVUHdzPQ.bin"
+        },
+        "coverageTransaction": {
+            "href": "https://api.availity.com/availity/sdk/v1/transactions/68605965411716199273310300138310"
+        },
+        "coverageRequest": {
+            "href": "https://api.availity.com/availity/sdk/v1/dfs/QnA4azhPRE9GMlovMEVsZU1DSnNicTlTUkhEV1R1ejY2eFp5Uys4RkMrYVM1K0h0LzlnUGgyTE5ZUHptcnNuWGQ4YWpzU0hOdFBNQWVvK3VlVHpEVUVscjRTL29OQUtRVUorYXp0M2ZDRm50b3Q4S1NtTTVZdFBLeDdUT1JyRnY5S2RDSDhZM0lhNnMzN1JFd3VINmtwbGMzOHlNTkY2cFhyd3l4SDJoMnJFMk5UcTBiaTRrZ0lTbW8zanh0UnRKVlV1VXZNZEJIUGVhKzBkNk42U1R5MEh5dFlOSkFQYXA1bm9rUm56Skh0eE5iK2krYUJiTzhCZGFWbnVHYXdMcFFocXN0L0dmbCtZPQ.bin"
+        },
+        "self": {
+            "href": "https://api.availity.com/availity/v1/coverages/2502877228162455320"
+        }
+    },
+    "id": "2502877228162455320",
+    "customerId": "953549",
+    "controlNumber": "63798153569",
+    "status": "Complete",
+    "statusCode": "4",
+    "createdDate": "2024-05-20T10:01:13.000+0000",
+    "updatedDate": "2024-05-20T10:01:13.000+0000",
+    "expirationDate": "2024-05-21T10:01:13.000+0000",
+    "asOfDate": "2024-05-20T04:00:00.000+0000",
+    "requestedServiceType": [
+        {
+            "code": "98",
+            "value": "Professional (Physician) Visit - Office"
+        }
+    ],
+    "subscriber": {
+        "firstName": "ENRIQUE",
+        "middleName": "A",
+        "lastName": "LARA",
+        "memberId": "PHU10027930P",
+        "gender": "Male",
+        "genderCode": "M",
+        "birthDate": "1981-07-27T04:00:00.000+0000",
+        "address": {
+            "line1": "733 NANTUCKET",
+            "city": "HARLINGEN",
+            "state": "Texas",
+            "stateCode": "TX",
+            "zipCode": "78550"
+        }
+    },
+    "patient": {
+        "firstName": "ENRIQUE",
+        "middleName": "A",
+        "lastName": "LARA",
+        "subscriberRelationship": "Self",
+        "subscriberRelationshipCode": "18",
+        "gender": "Male",
+        "genderCode": "M",
+        "birthDate": "1981-07-27T04:00:00.000+0000",
+        "address": {
+            "line1": "733 NANTUCKET",
+            "city": "HARLINGEN",
+            "state": "Texas",
+            "stateCode": "TX",
+            "zipCode": "78550"
+        },
+        "updateYourRecords": true
+    },
+    "payer": {
+        "name": "BCBSTX",
+        "payerId": "G84980",
+        "responseName": "BCBSTX",
+        "responsePayerId": "G84980",
+        "thirdPartyAdministrator": false,
+        "contactInformation": [
+            {
+                "phone": "8006762583"
+            }
+        ]
+    },
+    "requestingProvider": {
+        "type": "Professional",
+        "typeCode": "AT",
+        "role": "Attending",
+        "roleCode": "AT",
+        "lastName": "AVAILITY",
+        "npi": "1578085338",
+        "placeOfService": "Office",
+        "placeOfServiceCode": "11"
+    },
+    "plans": [
+        {
+            "status": "Active Coverage",
+            "statusCode": "1",
+            "groupNumber": "W0069774",
+            "groupName": "PRIME HEALTHCARE SERVICES  INC",
+            "coverageStartDate": "2024-05-20T04:00:00.000+0000",
+            "eligibilityStartDate": "2021-07-01T04:00:00.000+0000",
+            "eligibilityEndDate": "9999-12-31T05:00:00.000+0000",
+            "benefits": [
+                {
+                    "name": "Health Benefit Plan Coverage",
+                    "type": "30",
+                    "status": "Active Coverage",
+                    "statusCode": "1",
+                    "statusDetails": {
+                        "noNetwork": [
+                            {
+                                "status": "Active Coverage",
+                                "statusCode": "1",
+                                "insuranceType": "Preferred Provider Organization (PPO)",
+                                "insuranceTypeCode": "PR",
+                                "level": "Family",
+                                "levelCode": "FAM",
+                                "description": "PRIME HEALTHCARE SHARED ADVANTAGE EPO HARLINGEN KN",
+                                "planNumber": "1032PPOX0004"
+                            }
+                        ]
+                    },
+                    "contacts": [
+                        {
+                            "category": "Contact Following Entity for Eligibility or Benefit Information",
+                            "categoryCode": "U",
+                            "networkStatus": "Network Not Applicable",
+                            "payerNotes": [
+                                "PLEASE CONTACT KEENAN AT 888 773 7218 TO VERIFY ELIGIBILITY INFORMATION FOR THE MEMBER"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Physician Visit - Office: Well",
+                    "type": "BZ",
+                    "contacts": [
+                        {
+                            "category": "Contact Following Entity for Eligibility or Benefit Information",
+                            "categoryCode": "U",
+                            "networkStatus": "Network Not Applicable",
+                            "placeOfService": "Office",
+                            "placeOfServiceCode": "11",
+                            "payerNotes": [
+                                "PLEASE CONTACT KEENAN AT 888 773 7218 TO VERIFY ELIGIBILITY INFORMATION FOR THE MEMBER"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Professional (Physician) Visit - Office",
+                    "type": "98",
+                    "contacts": [
+                        {
+                            "category": "Contact Following Entity for Eligibility or Benefit Information",
+                            "categoryCode": "U",
+                            "networkStatus": "Network Not Applicable",
+                            "placeOfService": "Office",
+                            "placeOfServiceCode": "11",
+                            "payerNotes": [
+                                "PLEASE CONTACT KEENAN AT 888 773 7218 TO VERIFY ELIGIBILITY INFORMATION FOR THE MEMBER"
+                            ]
+                        },
+                        {
+                            "category": "Contact Following Entity for Eligibility or Benefit Information",
+                            "categoryCode": "U",
+                            "networkStatus": "Network Not Applicable",
+                            "placeOfService": "Home",
+                            "placeOfServiceCode": "12",
+                            "payerNotes": [
+                                "PLEASE CONTACT KEENAN AT 888 773 7218 TO VERIFY ELIGIBILITY INFORMATION FOR THE MEMBER"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "insuranceType": "Preferred Provider Organization (PPO)",
+            "insuranceTypeCode": "PR",
+            "payerNotes": [
+                {
+                    "type": "Disclaimer",
+                    "typeCode": "P",
+                    "message": "UNLESS OTHERWISE REQUIRED BY STATE LAW THIS NOTICE IS NOT A GUARANTEE OF PAYMENT   BENEFITS ARE SUBJECT TO ALL CONTRACT LIMITS AND THE MEMBERS STATUS ON THE DATE OF SERVICE   ACCUMULATED AMOUNTS SUCH AS DEDUCTIBLE MAY CHANGE AS ADDITIONAL CLAIMS ARE PROCESSED"
+                }
+            ]
+        }
+    ],
+    "supplementalInformation": {
+        "professionalPatientCostEstimator": false,
+        "institutionalPatientCostEstimator": false,
+        "patientCareSummary": false,
+        "assessmentCarePlan": false,
+        "outOfArea": false,
+        "requestLtssccAmount": false,
+        "erReferralCompleted": false,
+        "functionalIdentifierCode": "HB",
+        "applicationSenderCode": "G84980",
+        "eligibleForCOB": false
+    },
+    "hasHRAInformation": false
+}
