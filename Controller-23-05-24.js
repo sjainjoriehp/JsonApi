@@ -52,20 +52,7 @@ const OutputGeneratorByJson = async (req, res, next) => {
         ? JsonData?.plans[0]?.benefits[i]?.statusCode
         : "";
 
-        // benefitDescriptions data for each Category
-        ChildObj.benefit_descriptions =  "NA";
-             if(JsonData?.plans[0]?.benefits[i]?.benefitDescriptions !==undefined){
-              if(JsonData?.plans[0]?.benefits[i]?.benefitDescriptions?.noNetwork !==undefined) {
-              ChildObj.benefit_descriptions =  (JsonData?.plans[0]?.benefits[i]?.benefitDescriptions?.noNetwork[0]?.payerNotes[0] !==undefined) ? JsonData?.plans[0]?.benefits[i]?.benefitDescriptions?.noNetwork[0]?.payerNotes[0]:'NA';
-              } else if(JsonData?.plans[0]?.benefits[i]?.benefitDescriptions?.notApplicableNetwork !==undefined) {
-                // ChildObj.benefitDescriptions =  "benifit des notApplicableNetwork";
-              ChildObj.benefit_descriptions =  (JsonData?.plans[0]?.benefits[i]?.benefitDescriptions?.notApplicableNetwork[0]?.payerNotes[0] !==undefined) ? JsonData?.plans[0]?.benefits[i]?.benefitDescriptions?.notApplicableNetwork[0]?.payerNotes[0]:'NA';
-              }
-             } 
-             else if(JsonData?.plans[0]?.benefits[i]?.payerNotes !==undefined) {
-              ChildObj.benefit_descriptions =  (JsonData?.plans[0]?.benefits[i]?.payerNotes[0]?.message !==undefined) ? JsonData?.plans[0]?.benefits[i]?.payerNotes[0]?.message:'NA';
-
-             }
+      //==================================================
 
       // coPayment/inNetwork
       ChildObj.amount_coPayment_inNetwork =
@@ -98,9 +85,6 @@ const OutputGeneratorByJson = async (req, res, next) => {
           ChildObj.benefits_Status_Details_noNetwork =  JsonData?.plans[0]?.benefits[i]?.statusDetails?.noNetwork !== 
           undefined 
           ? JsonData?.plans[0]?.benefits[i]?.statusDetails?.noNetwork:[];
-
-          
-        
       // ===============Push into a main obj==================
       Professional_Physician_visit.push(ChildObj);
       ChildObj = {};
@@ -260,32 +244,7 @@ table += `<table>
 table += `<table>==============================================================`;
 table +=`<table>
          <tr><td style="font-weight:bold; font-size:1.17em;">Insurance Type</td> <td>&nbsp : &nbsp;</td> <td >${(JsonData?.plans[0]?.insuranceType !==undefined) ? JsonData?.plans[0]?.insuranceType:'NA'}</td> </tr>`;
-   
-  //  Plan benifit's--
-  // benefits_Status_Details_noNetwork
-  table += `<table>==============================================================
-  <h3 style="font-weight:bold; padding-top:0px;" >PLAN  INFORMATION</h3>
-  ==============================================================`;
-  Object.entries(data).map((val, index) => {
-    if(val[1]?.benefits_Status_Details_noNetwork.length>0) {
-    // console.log(val[1]?.benefits_Status_Details_noNetwork);
-      val[1]?.benefits_Status_Details_noNetwork.map((childVal, index) => {
-        // console.log(childVal);
-        table += `<tr><td>status</td> <td>&nbsp : &nbsp;</td> <td>${(childVal?.status) ? childVal?.status : 'NA'}</td></tr>
-       <tr> <td>statusCode</td> <td>&nbsp : &nbsp;</td> <td>${(childVal?.statusCode) ? childVal?.statusCode: 'NA'}</td></tr>
-       <tr> <td>insuranceType</td> <td>&nbsp : &nbsp;</td> <td>${(childVal?.insuranceType) ? childVal?.insuranceType: 'NA'}</td></tr>
-        <tr><td>insuranceTypeCode</td> <td>&nbsp : &nbsp;</td> <td>${(childVal?.insuranceTypeCode) ? childVal?.insuranceTypeCode : 'NA'}</td></tr>
-       <tr> <td>description</td> <td>&nbsp : &nbsp;</td> <td>${(childVal?.description) ? childVal?.description:'NA'}</td></tr>`;
-      });
-    }
-  });
-
-  // table += `<tr>
-  // <td>${childVal[0]}</td> <td>&nbsp : &nbsp;</td> <td>$${childVal[1]}</td>
-  // </tr>`; 
-
-
-         //  ELIGIBILITY BENEFITS
+    //  ELIGIBILITY BENEFITS
     table += `<table>==============================================================
  <h3 style="font-weight:bold; padding-top:0px;" >ELIGIBILITY BENEFITS</h3>
  ==============================================================`;
@@ -367,20 +326,19 @@ table +=`<table>
           table += `<table><h3>${val[1]}</h3>
       ==============================================================`;
         }
-        // console.log(val);
         if (
           val[0] !== "amount_coPayment_inNetwork" ||
           val[0] !== "amount_coInsurance_inNetwork" ||
           val[0] !== "amount_outOfPocket_inNetwork" ||
-          val[0] !== "amount_deductibles_inNetwork" 
-          // val[0] !== "benefits_Status_Details_noNetwork"
+          val[0] !== "amount_deductibles_inNetwork" ||
+          val[0] !== "benefits_Status_Details_noNetwork"
         ) {
           if (
             val[0] == "amount_coPayment_inNetwork" ||
             val[0] == "amount_coInsurance_inNetwork" ||
             val[0] == "amount_outOfPocket_inNetwork" ||
-            val[0] == "amount_deductibles_inNetwork" 
-            // val[0]== "benefits_Status_Details_noNetwork"
+            val[0] == "amount_deductibles_inNetwork" ||
+            val[0]== "benefits_Status_Details_noNetwork"
           ) {
             //Modify the keys for  subheading
             let keyArr = val[0].split("_");
@@ -392,25 +350,19 @@ table +=`<table>
             table += `<table><h4> ${keyArr.join("  ")}
       </h4>-----------------------------------------------------------------------------------------`;
           } else {
-
-            // categories details like(name,type,status,statuscode)  
-          if(val[0] !=='benefits_Status_Details_noNetwork') {
             table += `<tr>
-            <td>${val[0].replace("_"," ")}</td> <td>&nbsp : &nbsp;</td> <td>${val[1]}</td>
-          </tr>`;
-          }
-           
-      
+      <td>${val[0]}</td> <td>&nbsp : &nbsp;</td> <td>${val[1]}</td>
+      </tr>`;
           }
         }
-           
+
         if (
           val[0] == "amount_coPayment_inNetwork" ||
           val[0] == "amount_coInsurance_inNetwork" ||
         
           (val[0] == "amount_outOfPocket_inNetwork") |
-            (val[0] == "amount_deductibles_inNetwork") 
-            // (val[0] == "benefits_Status_Details_noNetwork")
+            (val[0] == "amount_deductibles_inNetwork") ||
+            (val[0] == "benefits_Status_Details_noNetwork")
         ) {
           let CData = val[1][0];
           // console.log("check,",CData);
